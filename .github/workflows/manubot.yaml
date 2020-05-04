@@ -33,10 +33,8 @@ jobs:
           restore-keys: |
             ci-cache-refs/heads/master
       - uses: s-weigand/setup-conda@v1
-      - name: Activate Environment
-      	run: |
-	  conda --version
-          which python
+      - run: conda --version
+      - run: which python
       - name: Build Manuscript
         shell: bash --login {0}
         run: bash build/build.sh
