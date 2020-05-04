@@ -42,8 +42,8 @@ jobs:
       - name: Activate Environment
       	shell: bash --login {0}
 	run: |
-	  source $HOME/anaconda3/etc/profile.d/conda.sh
-	  conda activate manubot      
+	  bash source $HOME/anaconda3/etc/profile.d/conda.sh
+	  bash conda activate manubot      
       - name: Build Manuscript
         shell: bash --login {0}
         run: bash build/build.sh
