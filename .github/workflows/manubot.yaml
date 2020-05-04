@@ -32,9 +32,9 @@ jobs:
           key: ci-cache-${{ github.ref }}
           restore-keys: |
             ci-cache-refs/heads/master
+      - uses: s-weigand/setup-conda@v1
       - name: Activate Environment
-        uses: s-weigand/setup-conda@v1
-        run: conda --version
+      	run: conda --version
         run: which python
       - name: Build Manuscript
         shell: bash --login {0}
