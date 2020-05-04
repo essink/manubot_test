@@ -41,8 +41,9 @@ jobs:
       #    miniconda-version: 'latest'
       - name: Activate Environment
       	shell: bash --login {0}
-	run: source $HOME/anaconda3/etc/profile.d/conda.sh
-	run: conda activate manubot      
+	run: |
+	  source $HOME/anaconda3/etc/profile.d/conda.sh
+	  conda activate manubot      
       - name: Build Manuscript
         shell: bash --login {0}
         run: bash build/build.sh
