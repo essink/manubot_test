@@ -33,7 +33,6 @@ jobs:
           restore-keys: |
             ci-cache-refs/heads/master
       - name: Activate Environment
-      	uses: actions/checkout@v2
         uses: s-weigand/setup-conda@v1
         run: conda --version
         run: which python
