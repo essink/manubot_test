@@ -9,7 +9,8 @@ on:
 jobs:
   manubot:
     name: Manubot
-    runs-on: ubuntu-latest
+     #runs-on: ubuntu-latest
+     runs-on: self-hosted
     env:
       GITHUB_PULL_REQUEST_SHA: ${{ github.event.pull_request.head.sha }}
     steps:
@@ -31,13 +32,16 @@ jobs:
           key: ci-cache-${{ github.ref }}
           restore-keys: |
             ci-cache-refs/heads/master
-      - name: Install Environment
-        uses: goanpeca/setup-miniconda@v1
-        with:
-          activate-environment: manubot
-          environment-file: build/environment.yml
-          auto-activate-base: false
-          miniconda-version: 'latest'
+      #- name: Install Environment
+      #  uses: goanpeca/setup-miniconda@v1
+      #  with:
+      #    activate-environment: manubot
+      #    environment-file: build/environment.yml
+      #    auto-activate-base: false
+      #    miniconda-version: 'latest'
+      - name: Activate Environment
+      	shell: bash --login {0}
+	run: conda activate manubot      
       - name: Build Manuscript
         shell: bash --login {0}
         run: bash build/build.sh
