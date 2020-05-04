@@ -40,8 +40,12 @@ jobs:
       #    auto-activate-base: false
       #    miniconda-version: 'latest'
       - name: Activate Environment
-      	shell: bash --login {0}
-	run: source ~/anaconda3/etc/profile.d/conda.sh      
+      	#shell: bash --login {0}
+	#run: source ~/anaconda3/etc/profile.d/conda.sh
+	uses: actions/checkout@v2
+        uses: s-weigand/setup-conda@v1
+        run: conda --version
+        run: which python
       - name: Build Manuscript
         shell: bash --login {0}
         run: bash build/build.sh
