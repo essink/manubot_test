@@ -34,8 +34,9 @@ jobs:
             ci-cache-refs/heads/master
       - uses: s-weigand/setup-conda@v1
       - name: Activate Environment
-      	run: conda --version
-        run: which python
+      	run: |
+	  conda --version
+          which python
       - name: Build Manuscript
         shell: bash --login {0}
         run: bash build/build.sh
