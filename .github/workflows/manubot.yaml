@@ -9,8 +9,8 @@ on:
 jobs:
   manubot:
     name: Manubot
-     #runs-on: ubuntu-latest
-     runs-on: self-hosted
+    # runs-on: ubuntu-latest
+    runs-on: self-hosted
     env:
       GITHUB_PULL_REQUEST_SHA: ${{ github.event.pull_request.head.sha }}
     steps:
