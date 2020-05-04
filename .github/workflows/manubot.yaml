@@ -35,6 +35,8 @@ jobs:
       - uses: s-weigand/setup-conda@v1
       - run: conda --version
       - run: which python
+      - name: Activate Conda environment
+      	run: source activate manubot
       - name: Build Manuscript
         shell: bash --login {0}
         run: bash build/build.sh
