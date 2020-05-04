@@ -37,20 +37,20 @@ jobs:
       - run: which python
       # - name: Activate Conda environment
       #	run: source activate manubot
-      - name: Build Manuscript
-        shell: bash --login {0}
-        run: bash build/build.sh
-      - name: Upload Artifacts
-        uses: actions/upload-artifact@v1
-        with:
-          name: manuscript-${{ github.run_id }}-${{ env.TRIGGERING_SHA_7 }}
-          path: output
-      - name: Deploy Manuscript
-        if: github.ref == 'refs/heads/master' && github.event_name == 'push' && !github.event.repository.fork
-        env:
-          MANUBOT_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          MANUBOT_SSH_PRIVATE_KEY: ${{ secrets.MANUBOT_SSH_PRIVATE_KEY }}
-          CI_BUILD_WEB_URL: https://github.com/${{ github.repository }}/commit/${{ github.sha }}/checks
-          CI_JOB_WEB_URL: https://github.com/${{ github.repository }}/runs/${{ github.run_id }}
-        shell: bash --login {0}
-        run: bash ci/deploy.sh
+      #- name: Build Manuscript
+      #  shell: bash --login {0}
+      #  run: bash build/build.sh
+      #- name: Upload Artifacts
+      #  uses: actions/upload-artifact@v1
+      #  with:
+      #    name: manuscript-${{ github.run_id }}-${{ env.TRIGGERING_SHA_7 }}
+      #    path: output
+      #- name: Deploy Manuscript
+      #  if: github.ref == 'refs/heads/master' && github.event_name == 'push' && !github.event.repository.fork
+      #  env:
+      #    MANUBOT_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #    MANUBOT_SSH_PRIVATE_KEY: ${{ secrets.MANUBOT_SSH_PRIVATE_KEY }}
+      #    CI_BUILD_WEB_URL: https://github.com/${{ github.repository }}/commit/${{ github.sha }}/checks
+      #    CI_JOB_WEB_URL: https://github.com/${{ github.repository }}/runs/${{ github.run_id }}
+      #  shell: bash --login {0}
+      #  run: bash ci/deploy.sh
