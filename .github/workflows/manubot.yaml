@@ -23,7 +23,7 @@ jobs:
           printenv
           conda --version
           which python
-      # - name: Activate Manubot
-      # 	run: |
-      #     source activate manubot
-      #     which python
+      - name: Activate Manubot
+      	run: |
+          source activate manubot
+          which python
