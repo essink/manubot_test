@@ -7,3 +7,5 @@ This section just serves as a test.
 \end{equation}
 
 To get github-pages working, I just had to unselect and then reselect to use the branch gh-pages in the settings. This fortunately triggered the build of the webpage.
+
+This sentence has been contributed by a collaborator.
