@@ -23,6 +23,5 @@ jobs:
           conda --version
           which python
       - name: Activate Conda Env
-      	run: |
-          source activate manubot
+        run: |
           which python
