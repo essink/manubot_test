@@ -17,7 +17,10 @@ jobs:
         with:
           activate-conda: true
       - name: Conda Info
+        env:
+          CONDA: /home/simon/anaconda3/bin/conda
         run: |
+          printenv
           conda --version
           which python
       # - name: Activate Manubot
