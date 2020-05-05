@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://essink.github.io/manubot_test/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://essink.github.io/manubot_test/v/0cce8a41baeed4d2c625ecea6aa53ae8b27345a1/" />
+  <link rel="alternate" type="text/html" href="https://essink.github.io/manubot_test/v/d9b9621c26fa083480b382455dc63b2b288855d7/" />
 
-  <meta name="manubot_html_url_versioned" content="https://essink.github.io/manubot_test/v/0cce8a41baeed4d2c625ecea6aa53ae8b27345a1/" />
+  <meta name="manubot_html_url_versioned" content="https://essink.github.io/manubot_test/v/d9b9621c26fa083480b382455dc63b2b288855d7/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://essink.github.io/manubot_test/v/0cce8a41baeed4d2c625ecea6aa53ae8b27345a1/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://essink.github.io/manubot_test/v/d9b9621c26fa083480b382455dc63b2b288855d7/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Manuscript Title
 
 <small><em>
 This manuscript
-([permalink](https://essink.github.io/manubot_test/v/0cce8a41baeed4d2c625ecea6aa53ae8b27345a1/))
+([permalink](https://essink.github.io/manubot_test/v/d9b9621c26fa083480b382455dc63b2b288855d7/))
 was automatically generated
-from [essink/manubot_test@0cce8a4](https://github.com/essink/manubot_test/tree/0cce8a41baeed4d2c625ecea6aa53ae8b27345a1)
+from [essink/manubot_test@d9b9621](https://github.com/essink/manubot_test/tree/d9b9621c26fa083480b382455dc63b2b288855d7)
 on May 5, 2020.
 </em></small>
 
@@ -444,6 +444,8 @@ This section just serves as a test.
 To get github-pages working, I just had to unselect and then reselect to use the branch gh-pages in the settings. This fortunately triggered the build of the webpage.
 
 This sentence has been contributed by a collaborator.
+
+[Nature article on collaborative writing](https://www.nature.com/articles/d41586-020-00916-6 "Synchronized editing: the future of collaborative writing")
 
 
 ## References {.page_break_before}
