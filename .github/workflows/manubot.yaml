@@ -12,6 +12,13 @@ jobs:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v2
-      - uses: s-weigand/setup-conda@v1
-      - run: conda --version
-      - run: which python	
+      - name: Launch Conda
+        uses: s-weigand/setup-conda@v1
+        with:
+          activate-conda: true
+      - name: Conda Info
+        run: |
+          conda --version
+          which python
+      - name: Activate Manubot
+      	run: source activate manubot
