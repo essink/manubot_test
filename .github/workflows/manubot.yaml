@@ -13,12 +13,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Launch Conda
+        env:
+          CONDA: /home/simon/anaconda3/bin/conda
         uses: s-weigand/setup-conda@v1.0.2
         with:
           activate-conda: true
       - name: Conda Info
-        env:
-          CONDA: /home/simon/anaconda3/bin/conda
         run: |
           printenv
           conda --version
