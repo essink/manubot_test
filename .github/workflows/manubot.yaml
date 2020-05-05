@@ -25,3 +25,4 @@ jobs:
       - name: Activate Conda Env
         run: |
           which python
+          conda env list
