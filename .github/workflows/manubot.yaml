@@ -24,8 +24,5 @@ jobs:
           which python
       - name: Activate Conda Env
         run: |
-          which python
-          conda env list
           source activate manubot
           which python
-          conda env list
