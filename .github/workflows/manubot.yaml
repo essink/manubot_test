@@ -20,10 +20,9 @@ jobs:
           activate-conda: true
       - name: Conda Info
         run: |
-          printenv
           conda --version
           which python
-      - name: Activate Manubot
+      - name: Activate Conda Env
       	run: |
           source activate manubot
           which python
