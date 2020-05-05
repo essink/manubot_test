@@ -26,3 +26,4 @@ jobs:
         run: |
           which python
           conda env list
+          conda activate manubot
