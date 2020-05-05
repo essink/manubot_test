@@ -13,14 +13,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Launch Conda
-        uses: s-weigand/setup-conda@v1
+        uses: s-weigand/setup-conda@v1.0.2
         with:
           activate-conda: true
       - name: Conda Info
         run: |
           conda --version
           which python
-      - name: Activate Manubot
-      	run: |
-          source activate manubot
-          which python
+      # - name: Activate Manubot
+      # 	run: |
+      #     source activate manubot
+      #     which python
