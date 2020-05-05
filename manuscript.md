@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://essink.github.io/manubot_test/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://essink.github.io/manubot_test/v/bac51d792bf1594916f70c59040af34898443feb/" />
+  <link rel="alternate" type="text/html" href="https://essink.github.io/manubot_test/v/bcab2a2099ce5588ef71c9c25b35bbc56da0d8fd/" />
 
-  <meta name="manubot_html_url_versioned" content="https://essink.github.io/manubot_test/v/bac51d792bf1594916f70c59040af34898443feb/" />
+  <meta name="manubot_html_url_versioned" content="https://essink.github.io/manubot_test/v/bcab2a2099ce5588ef71c9c25b35bbc56da0d8fd/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://essink.github.io/manubot_test/v/bac51d792bf1594916f70c59040af34898443feb/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://essink.github.io/manubot_test/v/bcab2a2099ce5588ef71c9c25b35bbc56da0d8fd/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Manuscript Title
 
 <small><em>
 This manuscript
-([permalink](https://essink.github.io/manubot_test/v/bac51d792bf1594916f70c59040af34898443feb/))
+([permalink](https://essink.github.io/manubot_test/v/bcab2a2099ce5588ef71c9c25b35bbc56da0d8fd/))
 was automatically generated
-from [essink/manubot_test@bac51d7](https://github.com/essink/manubot_test/tree/bac51d792bf1594916f70c59040af34898443feb)
+from [essink/manubot_test@bcab2a2](https://github.com/essink/manubot_test/tree/bcab2a2099ce5588ef71c9c25b35bbc56da0d8fd)
 on May 5, 2020.
 </em></small>
 
@@ -436,6 +436,10 @@ useful for *warnings* - [manubot.org](https://manubot.org/)
 ## Additional Content {.page_break_before}
 
 This section just serves as a test.
+
+\begin{equation}
+\alpha = 42
+\end{equation}
 
 
 ## References {.page_break_before}
