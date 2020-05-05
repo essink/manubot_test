@@ -48,7 +48,9 @@ jobs:
           which python
       - name: Build Manuscript
         shell: bash --login {0}
-        run: bash build/build.sh
+        run: |
+          which python
+          bash build/build.sh
       - name: Upload Artifacts
         uses: actions/upload-artifact@v1
         with:
