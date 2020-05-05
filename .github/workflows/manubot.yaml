@@ -42,13 +42,10 @@ jobs:
         run: |
           conda --version
           which python
-      - name: Activate Conda Env
-        run: |
-          source activate manubot
-          which python
-      - name: Build Manuscript
+      - name: Activate Conda Env and Build Manuscript
         shell: bash --login {0}
         run: |
+          source activate manubot
           which python
           bash build/build.sh
       - name: Upload Artifacts
