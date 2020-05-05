@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://essink.github.io/manubot_test/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://essink.github.io/manubot_test/v/7fd843ff2adfad1993cb2785afff33976e976dff/" />
+  <link rel="alternate" type="text/html" href="https://essink.github.io/manubot_test/v/0cce8a41baeed4d2c625ecea6aa53ae8b27345a1/" />
 
-  <meta name="manubot_html_url_versioned" content="https://essink.github.io/manubot_test/v/7fd843ff2adfad1993cb2785afff33976e976dff/" />
+  <meta name="manubot_html_url_versioned" content="https://essink.github.io/manubot_test/v/0cce8a41baeed4d2c625ecea6aa53ae8b27345a1/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://essink.github.io/manubot_test/v/7fd843ff2adfad1993cb2785afff33976e976dff/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://essink.github.io/manubot_test/v/0cce8a41baeed4d2c625ecea6aa53ae8b27345a1/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Manuscript Title
 
 <small><em>
 This manuscript
-([permalink](https://essink.github.io/manubot_test/v/7fd843ff2adfad1993cb2785afff33976e976dff/))
+([permalink](https://essink.github.io/manubot_test/v/0cce8a41baeed4d2c625ecea6aa53ae8b27345a1/))
 was automatically generated
-from [essink/manubot_test@7fd843f](https://github.com/essink/manubot_test/tree/7fd843ff2adfad1993cb2785afff33976e976dff)
+from [essink/manubot_test@0cce8a4](https://github.com/essink/manubot_test/tree/0cce8a41baeed4d2c625ecea6aa53ae8b27345a1)
 on May 5, 2020.
 </em></small>
 
@@ -442,6 +442,8 @@ This section just serves as a test.
 \end{equation}
 
 To get github-pages working, I just had to unselect and then reselect to use the branch gh-pages in the settings. This fortunately triggered the build of the webpage.
+
+This sentence has been contributed by a collaborator.
 
 
 ## References {.page_break_before}
