@@ -4,7 +4,7 @@ author-meta:
 - Jane Roe
 bibliography:
 - content/manual-references.json
-date-meta: '2020-05-05'
+date-meta: '2020-05-15'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -23,9 +23,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Manuscript Title" />
 
-  <meta name="dc.date" content="2020-05-05" />
+  <meta name="dc.date" content="2020-05-15" />
 
-  <meta name="citation_publication_date" content="2020-05-05" />
+  <meta name="citation_publication_date" content="2020-05-15" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://essink.github.io/manubot_test/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://essink.github.io/manubot_test/v/d9b9621c26fa083480b382455dc63b2b288855d7/" />
+  <link rel="alternate" type="text/html" href="https://essink.github.io/manubot_test/v/6b3ad54c2aca75bf643f05675301a33efb2684fd/" />
 
-  <meta name="manubot_html_url_versioned" content="https://essink.github.io/manubot_test/v/d9b9621c26fa083480b382455dc63b2b288855d7/" />
+  <meta name="manubot_html_url_versioned" content="https://essink.github.io/manubot_test/v/6b3ad54c2aca75bf643f05675301a33efb2684fd/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://essink.github.io/manubot_test/v/d9b9621c26fa083480b382455dc63b2b288855d7/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://essink.github.io/manubot_test/v/6b3ad54c2aca75bf643f05675301a33efb2684fd/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,10 +103,10 @@ title: Manuscript Title
 
 <small><em>
 This manuscript
-([permalink](https://essink.github.io/manubot_test/v/d9b9621c26fa083480b382455dc63b2b288855d7/))
+([permalink](https://essink.github.io/manubot_test/v/6b3ad54c2aca75bf643f05675301a33efb2684fd/))
 was automatically generated
-from [essink/manubot_test@d9b9621](https://github.com/essink/manubot_test/tree/d9b9621c26fa083480b382455dc63b2b288855d7)
-on May 5, 2020.
+from [essink/manubot_test@6b3ad54](https://github.com/essink/manubot_test/tree/6b3ad54c2aca75bf643f05675301a33efb2684fd)
+on May 15, 2020.
 </em></small>
 
 ## Authors
@@ -446,6 +446,113 @@ To get github-pages working, I just had to unselect and then reselect to use the
 This sentence has been contributed by a collaborator.
 
 [Nature article on collaborative writing](https://www.nature.com/articles/d41586-020-00916-6 "Synchronized editing: the future of collaborative writing")
+
+[Article by TU Hamburg doing the same with gitlab](https://oa-pub.hos.tuhh.de/en/project/ "Modern Publishing: Digital Tools for Modern Publishing Processes")
+
+
+## PyMotW - Manubot {.page_break_before}
+
+[PLOS CB Paper](https://greenelab.github.io/meta-review/ "Open collaborative writing with Manubot")
+
+[Manubot Website](https://manubot.org/catalog/)
+
+[Manubot Github](https://github.com/manubot)
+
+### Aims
+
+- > disperse teams of collaborators
+    - \> 10 authors
+
+- version control
+    - transparency
+    - better attribution of credit
+
+- automatization
+    - build
+    - bibliography
+    - deploying as webpage
+
+### Motivation
+
+- > traditionally publishing manuscripts based on
+  - poprietary software (e.g. `.docx`) [^1]
+  - offline tools (e.g. `Latex`)
+
+[^1]: At least in the biology community
+
+### Origin of Manubot
+
+- open review @doi:10.1098/rsif.2017.0387
+  - many authors bringing different expertise
+  - hosted on Github
+  - Creative Commons Attribution License ([CC BY 4.0](https://github.com/greenelab/deep-review/blob/master/LICENSE.md))
+  - to support workflow $\rightarrow$ **manubot python package**
+
+### Comparison to other writing platforms
+
+[Comparison in Table 1](https://greenelab.github.io/meta-review/#tbl:platforms)
+
+- thoughts
+    - proposing changes really not possible in Overleaf?
+    - characterlevel provenance really not possible in Overleaf?
+
+- main competitor for manubot in our case: [Overleaf](https://www.overleaf.com/){.button}
+
+### Workflow
+
+[Illustration of Workflow](https://greenelab.github.io/meta-review/#fig:workflow)
+
+### Features
+
+#### manubot python packages
+
+- > Process manuscript content to create outputs for Pandoc consumption.
+  - I think it just moves things around and merges `.md` files
+- citations [see USAGE.md](https://github.com/manubot/rootstock/blob/master/USAGE.md#citations)
+  - [pandoc-manubot-cite](https://github.com/manubot/manubot#pandoc-filter)
+  - cite-by-ID [Table with examples](https://greenelab.github.io/meta-review/#tbl:citations)
+
+#### pandoc filters
+
+- e.g. pandoc-xnos for referencing tables, equations (sections)
+
+#### Pandoc Markdown
+
+- citations
+- table
+- captions
+- equations
+
+#### html webpage
+
+- themes $\rightarrow$ modify aesthetics
+- interactive plots or mybinder
+- [html plugins](https://github.com/essink/manubot_test/tree/master/build/plugins)
+  - [hypothes.is](https://web.hypothes.is/) - annotations/comments
+- hosted on github pages
+
+#### Continuous Publication / Integration
+
+- CI of your choice
+- default Travis
+- [Self-Hosted Github Actions Examples](https://github.com/essink/manubot_test/blob/master/.github/workflows/manubot.yaml)
+
+#### [Timestamping](https://greenelab.github.io/meta-review/#timestamping)
+
+### Limitations
+
+- require *computational* background
+- they advise having guidelines on contributions/authorship
+  - e.g. 5 commits need to get the co-authorship
+- primary output is html
+  1. `.md` $\rightarrow$ `.html`
+  2. `.html` $\rightarrow$ `.pdf`
+
+- no Latex support yet!
+  - of course formula etc. work via MathJax, but no use of fancy packages (e.g. braket)
+  - [Issue on Latex output](https://github.com/manubot/rootstock/issues/249)
+  - working on `.md` $\rightarrow$ `.tex` via pandoc
+    - issue is how to do this properly in CI
 
 
 ## References {.page_break_before}
