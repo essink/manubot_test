@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://essink.github.io/manubot_test/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://essink.github.io/manubot_test/v/8990e1238b27e4435a61c0e5282b7c3f2d7eb74f/" />
+  <link rel="alternate" type="text/html" href="https://essink.github.io/manubot_test/v/b4f6482952add2ed7318ad42a8365342799eac65/" />
 
-  <meta name="manubot_html_url_versioned" content="https://essink.github.io/manubot_test/v/8990e1238b27e4435a61c0e5282b7c3f2d7eb74f/" />
+  <meta name="manubot_html_url_versioned" content="https://essink.github.io/manubot_test/v/b4f6482952add2ed7318ad42a8365342799eac65/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://essink.github.io/manubot_test/v/8990e1238b27e4435a61c0e5282b7c3f2d7eb74f/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://essink.github.io/manubot_test/v/b4f6482952add2ed7318ad42a8365342799eac65/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Manuscript Title
 
 <small><em>
 This manuscript
-([permalink](https://essink.github.io/manubot_test/v/8990e1238b27e4435a61c0e5282b7c3f2d7eb74f/))
+([permalink](https://essink.github.io/manubot_test/v/b4f6482952add2ed7318ad42a8365342799eac65/))
 was automatically generated
-from [essink/manubot_test@8990e12](https://github.com/essink/manubot_test/tree/8990e1238b27e4435a61c0e5282b7c3f2d7eb74f)
+from [essink/manubot_test@b4f6482](https://github.com/essink/manubot_test/tree/b4f6482952add2ed7318ad42a8365342799eac65)
 on May 15, 2020.
 </em></small>
 
@@ -555,8 +555,12 @@ This sentence has been contributed by a collaborator.
 - no Latex support yet!
   - of course formulae etc. work via MathJax, but no use of fancy packages (e.g. braket)
   - [Issue on Latex output](https://github.com/manubot/rootstock/issues/249)
+  - [pandoc markdown to latex templates](https://github.com/jgm/pandoc/wiki/User-contributed-templates)
   - working on `.md` $\rightarrow$ `.tex` via pandoc
     - issue is how to do this properly in CI
+
+- no clue about styles for publications and figure placement etc.
+  - would prefer to do this properly in Latex
 
 ### How to set it up?
 
