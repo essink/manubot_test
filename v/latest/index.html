@@ -113,9 +113,9 @@
   <meta name="citation_fulltext_html_url" content="https://essink.github.io/manubot_test/" />
   <meta name="citation_pdf_url" content="https://essink.github.io/manubot_test/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://essink.github.io/manubot_test/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://essink.github.io/manubot_test/v/6b3ad54c2aca75bf643f05675301a33efb2684fd/" />
-  <meta name="manubot_html_url_versioned" content="https://essink.github.io/manubot_test/v/6b3ad54c2aca75bf643f05675301a33efb2684fd/" />
-  <meta name="manubot_pdf_url_versioned" content="https://essink.github.io/manubot_test/v/6b3ad54c2aca75bf643f05675301a33efb2684fd/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://essink.github.io/manubot_test/v/9e0e0a4ccab04adac39251625fba3ba2646ce208/" />
+  <meta name="manubot_html_url_versioned" content="https://essink.github.io/manubot_test/v/9e0e0a4ccab04adac39251625fba3ba2646ce208/" />
+  <meta name="manubot_pdf_url_versioned" content="https://essink.github.io/manubot_test/v/9e0e0a4ccab04adac39251625fba3ba2646ce208/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -136,9 +136,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://essink.github.io/manubot_test/v/6b3ad54c2aca75bf643f05675301a33efb2684fd/">permalink</a>)
+(<a href="https://essink.github.io/manubot_test/v/9e0e0a4ccab04adac39251625fba3ba2646ce208/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/essink/manubot_test/tree/6b3ad54c2aca75bf643f05675301a33efb2684fd">essink/manubot_test@6b3ad54</a>
+from <a href="https://github.com/essink/manubot_test/tree/9e0e0a4ccab04adac39251625fba3ba2646ce208">essink/manubot_test@9e0e0a4</a>
 on May 15, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -371,7 +371,7 @@ White background specified to serve as a backdrop for transparent sections of th
 </tbody>
 </table>
 </div>
-<div id="tbl:1b4a39f5-7ff9-40e4-9d8f-41f13cb77c68" class="tablenos">
+<div id="tbl:16fecd08-e983-4f4c-9c6b-a1d65746dd40" class="tablenos">
 <table>
 <caption><span>Table 3:</span> A table with merged cells using the <code>attributes</code> plugin.
 </caption>
@@ -574,7 +574,7 @@ useful for <em>warnings</em> - <a href="https://manubot.org/">manubot.org</a></s
 </ol></li>
 <li>no Latex support yet!
 <ul>
-<li>of course formula etc. work via MathJax, but no use of fancy packages (e.g. braket)</li>
+<li>of course formulae etc. work via MathJax, but no use of fancy packages (e.g. braket)</li>
 <li><a href="https://github.com/manubot/rootstock/issues/249">Issue on Latex output</a></li>
 <li>working on <code>.md</code> <span class="math inline">\(\rightarrow\)</span> <code>.tex</code> via pandoc
 <ul>
@@ -582,6 +582,59 @@ useful for <em>warnings</em> - <a href="https://manubot.org/">manubot.org</a></s
 </ul></li>
 </ul></li>
 </ul>
+<h3 id="how-to-set-it-up">How to set it up?</h3>
+<ul>
+<li><a href="https://github.com/manubot/rootstock">Manubot rootstock</a></li>
+</ul>
+<h2 class="page_break_before" id="pymotw---manubot-1">PyMotW - Manubot</h2>
+<ul>
+<li>manubot
+<ul>
+<li>Github Actions CI with self-hosted runner
+<ul>
+<li>use local conda environment</li>
+<li>sync final <code>.pdf</code> to remarkable :P</li>
+</ul></li>
+</ul></li>
+<li>zotero
+<ul>
+<li>BibORB - brain.bib imported</li>
+<li>collection for manubot manuscript</li>
+<li>BetterBibtex for Zotero
+<ul>
+<li>automatized export of collection to <code>csl json</code> with correct key (<code>raw:&lt;key&gt;</code>) that is recognized by manubot</li>
+</ul></li>
+</ul></li>
+<li>Atom
+<ul>
+<li>packages
+<ul>
+<li><code>markdown-preview-enhanced</code> for live preview</li>
+<li><code>language-pfm</code> for syntax highlighting (Pandoc Flavored Markdown)</li>
+<li><code>zotero-citation</code></li>
+</ul></li>
+<li>nice github integration</li>
+<li>can use local builds
+<ul>
+<li>either <code>bash build/build.sh</code></li>
+<li>or <code>bash build/autobuild.sh</code> which triggers a run whenever a saved file shows changes <span class="math inline">\(\rightarrow\)</span> view complete document live in browser</li>
+</ul></li>
+</ul></li>
+<li>mathpix
+<ul>
+<li>snapshot formulae from photo/handwriting/papers and convert to latex</li>
+</ul></li>
+<li>whenever I start working with this great setup I end up improving the workflow and don’t get anything done …</li>
+</ul>
+<figure>
+<img src="https://imgs.xkcd.com/comics/automation.png" alt="" /><figcaption>The sad truth…</figcaption>
+</figure>
+<figure>
+<img src="https://imgs.xkcd.com/comics/is_it_worth_the_time.png" alt="" />
+</figure>
+<figure>
+<img src="https://imgs.xkcd.com/comics/workaround.png" alt="" /><figcaption>I definitely solved it…</figcaption>
+</figure>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references hanging-indent" role="doc-bibliography">
