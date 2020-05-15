@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://essink.github.io/manubot_test/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://essink.github.io/manubot_test/v/9e0e0a4ccab04adac39251625fba3ba2646ce208/" />
+  <link rel="alternate" type="text/html" href="https://essink.github.io/manubot_test/v/95195ce49028de8c1255b3cd37e78f8e5da81dae/" />
 
-  <meta name="manubot_html_url_versioned" content="https://essink.github.io/manubot_test/v/9e0e0a4ccab04adac39251625fba3ba2646ce208/" />
+  <meta name="manubot_html_url_versioned" content="https://essink.github.io/manubot_test/v/95195ce49028de8c1255b3cd37e78f8e5da81dae/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://essink.github.io/manubot_test/v/9e0e0a4ccab04adac39251625fba3ba2646ce208/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://essink.github.io/manubot_test/v/95195ce49028de8c1255b3cd37e78f8e5da81dae/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Manuscript Title
 
 <small><em>
 This manuscript
-([permalink](https://essink.github.io/manubot_test/v/9e0e0a4ccab04adac39251625fba3ba2646ce208/))
+([permalink](https://essink.github.io/manubot_test/v/95195ce49028de8c1255b3cd37e78f8e5da81dae/))
 was automatically generated
-from [essink/manubot_test@9e0e0a4](https://github.com/essink/manubot_test/tree/9e0e0a4ccab04adac39251625fba3ba2646ce208)
+from [essink/manubot_test@95195ce](https://github.com/essink/manubot_test/tree/95195ce49028de8c1255b3cd37e78f8e5da81dae)
 on May 15, 2020.
 </em></small>
 
@@ -462,6 +462,10 @@ This sentence has been contributed by a collaborator.
 
 - > disperse teams of collaborators
     - \> 10 authors
+
+![](https://media.giphy.com/media/3ov9k5wE5YQjFPDfhe/giphy.gif)
+
+![](https://media.giphy.com/media/xT9IgkY6M1SZd6spmE/giphy.gif)
 
 - version control
     - transparency
