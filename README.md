@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/essink/manubot_test/tree/gh-pages) branch hosts the contents of this directory at <https://essink.github.io/manubot_test/>.
-The permalink for this webpage version is <https://essink.github.io/manubot_test/v/95195ce49028de8c1255b3cd37e78f8e5da81dae/>.
+The permalink for this webpage version is <https://essink.github.io/manubot_test/v/6cbdee2015c88ad569b374b59ffa8298bb8d793d/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://essink.github.io/manubot_test/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`95195ce49028de8c1255b3cd37e78f8e5da81dae`](https://github.com/essink/manubot_test/commit/95195ce49028de8c1255b3cd37e78f8e5da81dae).
+[`6cbdee2015c88ad569b374b59ffa8298bb8d793d`](https://github.com/essink/manubot_test/commit/6cbdee2015c88ad569b374b59ffa8298bb8d793d).
