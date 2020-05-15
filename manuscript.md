@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://essink.github.io/manubot_test/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://essink.github.io/manubot_test/v/6cbdee2015c88ad569b374b59ffa8298bb8d793d/" />
+  <link rel="alternate" type="text/html" href="https://essink.github.io/manubot_test/v/8990e1238b27e4435a61c0e5282b7c3f2d7eb74f/" />
 
-  <meta name="manubot_html_url_versioned" content="https://essink.github.io/manubot_test/v/6cbdee2015c88ad569b374b59ffa8298bb8d793d/" />
+  <meta name="manubot_html_url_versioned" content="https://essink.github.io/manubot_test/v/8990e1238b27e4435a61c0e5282b7c3f2d7eb74f/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://essink.github.io/manubot_test/v/6cbdee2015c88ad569b374b59ffa8298bb8d793d/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://essink.github.io/manubot_test/v/8990e1238b27e4435a61c0e5282b7c3f2d7eb74f/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Manuscript Title
 
 <small><em>
 This manuscript
-([permalink](https://essink.github.io/manubot_test/v/6cbdee2015c88ad569b374b59ffa8298bb8d793d/))
+([permalink](https://essink.github.io/manubot_test/v/8990e1238b27e4435a61c0e5282b7c3f2d7eb74f/))
 was automatically generated
-from [essink/manubot_test@6cbdee2](https://github.com/essink/manubot_test/tree/6cbdee2015c88ad569b374b59ffa8298bb8d793d)
+from [essink/manubot_test@8990e12](https://github.com/essink/manubot_test/tree/8990e1238b27e4435a61c0e5282b7c3f2d7eb74f)
 on May 15, 2020.
 </em></small>
 
@@ -583,7 +583,7 @@ This sentence has been contributed by a collaborator.
   - can use local builds
     - either `bash build/build.sh`
     - or `bash build/autobuild.sh` which triggers a run whenever a saved file shows changes $\rightarrow$ view complete document live in browser
-- mathpix
+- [mathpix](https://mathpix.com/)
   - snapshot formulae from photo/handwriting/papers and convert to latex
 - whenever I start working with this great setup I end up improving the workflow and don't get anything done ...
 
