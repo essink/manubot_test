@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://essink.github.io/manubot_test/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://essink.github.io/manubot_test/v/6b3ad54c2aca75bf643f05675301a33efb2684fd/" />
+  <link rel="alternate" type="text/html" href="https://essink.github.io/manubot_test/v/9e0e0a4ccab04adac39251625fba3ba2646ce208/" />
 
-  <meta name="manubot_html_url_versioned" content="https://essink.github.io/manubot_test/v/6b3ad54c2aca75bf643f05675301a33efb2684fd/" />
+  <meta name="manubot_html_url_versioned" content="https://essink.github.io/manubot_test/v/9e0e0a4ccab04adac39251625fba3ba2646ce208/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://essink.github.io/manubot_test/v/6b3ad54c2aca75bf643f05675301a33efb2684fd/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://essink.github.io/manubot_test/v/9e0e0a4ccab04adac39251625fba3ba2646ce208/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Manuscript Title
 
 <small><em>
 This manuscript
-([permalink](https://essink.github.io/manubot_test/v/6b3ad54c2aca75bf643f05675301a33efb2684fd/))
+([permalink](https://essink.github.io/manubot_test/v/9e0e0a4ccab04adac39251625fba3ba2646ce208/))
 was automatically generated
-from [essink/manubot_test@6b3ad54](https://github.com/essink/manubot_test/tree/6b3ad54c2aca75bf643f05675301a33efb2684fd)
+from [essink/manubot_test@9e0e0a4](https://github.com/essink/manubot_test/tree/9e0e0a4ccab04adac39251625fba3ba2646ce208)
 on May 15, 2020.
 </em></small>
 
@@ -549,10 +549,45 @@ This sentence has been contributed by a collaborator.
   2. `.html` $\rightarrow$ `.pdf`
 
 - no Latex support yet!
-  - of course formula etc. work via MathJax, but no use of fancy packages (e.g. braket)
+  - of course formulae etc. work via MathJax, but no use of fancy packages (e.g. braket)
   - [Issue on Latex output](https://github.com/manubot/rootstock/issues/249)
   - working on `.md` $\rightarrow$ `.tex` via pandoc
     - issue is how to do this properly in CI
+
+### How to set it up?
+
+- [Manubot rootstock](https://github.com/manubot/rootstock)
+
+
+## PyMotW - Manubot {.page_break_before}
+
+- manubot
+  - Github Actions CI with self-hosted runner
+    - use local conda environment
+    - sync final `.pdf` to remarkable :P
+- zotero
+  - BibORB - brain.bib imported
+  - collection for manubot manuscript
+  - BetterBibtex for Zotero
+    - automatized export of collection to `csl json` with correct key (`raw:<key>`) that is recognized by manubot
+- Atom
+  - packages
+    - `markdown-preview-enhanced` for live preview
+    - `language-pfm` for syntax highlighting (Pandoc Flavored Markdown)
+    - `zotero-citation`
+  - nice github integration
+  - can use local builds
+    - either `bash build/build.sh`
+    - or `bash build/autobuild.sh` which triggers a run whenever a saved file shows changes $\rightarrow$ view complete document live in browser
+- mathpix
+  - snapshot formulae from photo/handwriting/papers and convert to latex
+- whenever I start working with this great setup I end up improving the workflow and don't get anything done ...
+
+![The sad truth...](https://imgs.xkcd.com/comics/automation.png )
+
+![](https://imgs.xkcd.com/comics/is_it_worth_the_time.png )
+
+![I definitely solved it...]( https://imgs.xkcd.com/comics/workaround.png)
 
 
 ## References {.page_break_before}
